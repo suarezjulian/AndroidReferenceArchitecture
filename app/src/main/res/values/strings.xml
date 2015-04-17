@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">ReferenceArchitecture</string>
+    <string name="error_msg">Error while downloading info</string>
+</resources>

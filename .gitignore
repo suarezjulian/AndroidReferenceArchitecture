@@ -1,0 +1,27 @@
+#.gitignore for Android project
+
+#for MacOSX
+.DS_Store
+
+#for build.py
+build.version
+
+#for Android SDK
+.metadata
+bin/
+gen/
+build.xml
+build.properties
+local.properties
+.gradle
+
+#for Android SDK 4.0
+ant.properties
+
+#for Idea
+.idea/
+*.iml
+build/
+
+#for eclipse
+.settings
