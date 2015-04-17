@@ -37,8 +37,6 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
     @Inject
     MainPresenter mainPresenter;
 
-    private Jokes jokes;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -62,7 +60,6 @@ public class MainActivity extends BaseActivity<MainPresenter> implements MainVie
 
     @Override
     public void showJokes(Jokes jokes) {
-        this.jokes = jokes;
         jokesAdapter.setData(jokes);
         recyclerView.setVisibility(View.VISIBLE);
         textViewError.setVisibility(View.GONE);
