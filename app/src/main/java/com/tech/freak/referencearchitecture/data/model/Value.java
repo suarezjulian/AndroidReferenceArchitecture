@@ -78,10 +78,11 @@ public class Value implements Serializable {
         if (other == this) {
             return true;
         }
-        if ((other instanceof Value) == false) {
+        if (!(other instanceof Value)) {
             return false;
         }
         Value rhs = ((Value) other);
-        return new EqualsBuilder().append(id, rhs.id).append(joke, rhs.joke).append(categories, rhs.categories).isEquals();
+        return new EqualsBuilder().append(id, rhs.id).append(joke, rhs.joke).append(categories, rhs.categories)
+                .isEquals();
     }
 }

@@ -1,4 +1,4 @@
-package com.tech.freak.referencearchitecture.presentation.main.data;
+package com.tech.freak.referencearchitecture.domain.dao;
 
 import rx.Observable;
 

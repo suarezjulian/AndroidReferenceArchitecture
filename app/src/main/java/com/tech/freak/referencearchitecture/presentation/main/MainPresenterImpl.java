@@ -8,7 +8,7 @@ import android.util.Log;
 
 import com.globant.mvp.rx.AndroidSchedulerTransformer;
 import com.tech.freak.referencearchitecture.data.model.Jokes;
-import com.tech.freak.referencearchitecture.presentation.main.data.JokeDao;
+import com.tech.freak.referencearchitecture.domain.dao.JokeDao;
 
 /**
  * Created by j.suarez on 4/14/2015.
@@ -97,7 +97,6 @@ public class MainPresenterImpl implements MainPresenter {
     private Observable<Jokes> applyScheduler(Observable<Jokes> observable) {
         return observable.compose(new AndroidSchedulerTransformer<Jokes>());
     }
-
 
     private void unsubscribe() {
         if (subscriber != null) {

@@ -6,10 +6,10 @@ import retrofit.client.OkClient;
 import android.content.Context;
 
 import com.squareup.okhttp.OkHttpClient;
+import com.tech.freak.referencearchitecture.domain.dao.JokeDao;
 import com.tech.freak.referencearchitecture.domain.network.Api;
 import com.tech.freak.referencearchitecture.presentation.ActivityScope;
 import com.tech.freak.referencearchitecture.presentation.main.adapters.JokesAdapter;
-import com.tech.freak.referencearchitecture.presentation.main.data.JokeDao;
 
 import dagger.Module;
 import dagger.Provides;
@@ -37,10 +37,8 @@ public class MainModule {
     @Provides
     @ActivityScope
     public Api provideApi(OkHttpClient okHttpClient) {
-        RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint(ENDPOINT)
-                .setClient(new OkClient(okHttpClient))
-                .build();
+        RestAdapter restAdapter = new RestAdapter.Builder().setEndpoint(ENDPOINT)
+                .setClient(new OkClient(okHttpClient)).build();
         return restAdapter.create(Api.class);
     }
 

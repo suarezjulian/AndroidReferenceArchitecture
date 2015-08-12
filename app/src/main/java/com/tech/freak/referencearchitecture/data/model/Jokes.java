@@ -62,7 +62,7 @@ public class Jokes implements Serializable {
         if (other == this) {
             return true;
         }
-        if ((other instanceof Jokes) == false) {
+        if (!(other instanceof Jokes)) {
             return false;
         }
         Jokes rhs = ((Jokes) other);

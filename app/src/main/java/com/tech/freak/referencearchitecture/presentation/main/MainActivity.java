@@ -19,8 +19,7 @@ import com.tech.freak.referencearchitecture.presentation.ReferenceArchitectureAp
 import com.tech.freak.referencearchitecture.presentation.main.adapters.DividerItemDecoration;
 import com.tech.freak.referencearchitecture.presentation.main.adapters.JokesAdapter;
 
-
-public class MainActivity extends BaseActivity<MainPresenter> implements MainView {
+public class MainActivity extends BaseActivity<MainPresenter>implements MainView {
 
     @InjectView(R.id.recyclerView)
     RecyclerView recyclerView;
