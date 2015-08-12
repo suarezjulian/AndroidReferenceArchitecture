@@ -1,4 +1,6 @@
-package com.tech.freak.referencearchitecture.main.adapters;
+package com.tech.freak.referencearchitecture.presentation.main.adapters;
+
+import org.apache.commons.lang.StringEscapeUtils;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -6,9 +8,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
-import com.tech.freak.referencearchitecture.model.Jokes;
-
-import org.apache.commons.lang.StringEscapeUtils;
+import com.tech.freak.referencearchitecture.data.model.Jokes;
 
 /**
  * Created by j.suarez on 4/14/2015.

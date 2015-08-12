@@ -1,8 +1,8 @@
-package com.tech.freak.referencearchitecture.main;
+package com.tech.freak.referencearchitecture.presentation.main;
 
-import com.tech.freak.referencearchitecture.ActivityScope;
-import com.tech.freak.referencearchitecture.AppComponent;
-import com.tech.freak.referencearchitecture.main.adapters.JokesAdapter;
+import com.tech.freak.referencearchitecture.presentation.ActivityScope;
+import com.tech.freak.referencearchitecture.presentation.AppComponent;
+import com.tech.freak.referencearchitecture.presentation.main.adapters.JokesAdapter;
 
 import dagger.Component;
 

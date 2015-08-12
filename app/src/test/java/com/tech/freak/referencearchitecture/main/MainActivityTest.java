@@ -1,4 +1,4 @@
-package com.tech.freak.referencearchitecture.main;
+package com.tech.freak.referencearchitecture.presentation.main;
 
 import org.junit.After;
 import org.junit.Before;

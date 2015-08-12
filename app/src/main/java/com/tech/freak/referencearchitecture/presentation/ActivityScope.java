@@ -1,4 +1,4 @@
-package com.tech.freak.referencearchitecture;
+package com.tech.freak.referencearchitecture.presentation;
 
 import java.lang.annotation.Retention;
 import java.lang.annotation.RetentionPolicy;

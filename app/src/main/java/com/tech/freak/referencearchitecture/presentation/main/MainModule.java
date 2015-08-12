@@ -1,17 +1,18 @@
-package com.tech.freak.referencearchitecture.main;
+package com.tech.freak.referencearchitecture.presentation.main;
+
+import retrofit.RestAdapter;
+import retrofit.client.OkClient;
 
 import android.content.Context;
 
-import com.tech.freak.referencearchitecture.ActivityScope;
-import com.tech.freak.referencearchitecture.main.adapters.JokesAdapter;
-import com.tech.freak.referencearchitecture.main.data.JokeDao;
-import com.tech.freak.referencearchitecture.network.Api;
 import com.squareup.okhttp.OkHttpClient;
+import com.tech.freak.referencearchitecture.domain.network.Api;
+import com.tech.freak.referencearchitecture.presentation.ActivityScope;
+import com.tech.freak.referencearchitecture.presentation.main.adapters.JokesAdapter;
+import com.tech.freak.referencearchitecture.presentation.main.data.JokeDao;
 
 import dagger.Module;
 import dagger.Provides;
-import retrofit.RestAdapter;
-import retrofit.client.OkClient;
 
 /**
  * Created by j.suarez on 4/14/2015.

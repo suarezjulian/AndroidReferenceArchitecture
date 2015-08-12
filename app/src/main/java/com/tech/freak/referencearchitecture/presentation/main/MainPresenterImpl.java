@@ -1,14 +1,14 @@
-package com.tech.freak.referencearchitecture.main;
+package com.tech.freak.referencearchitecture.presentation.main;
+
+import rx.Observable;
+import rx.Subscriber;
 
 import android.os.Bundle;
 import android.util.Log;
 
 import com.globant.mvp.rx.AndroidSchedulerTransformer;
-import com.tech.freak.referencearchitecture.main.data.JokeDao;
-import com.tech.freak.referencearchitecture.model.Jokes;
-
-import rx.Observable;
-import rx.Subscriber;
+import com.tech.freak.referencearchitecture.data.model.Jokes;
+import com.tech.freak.referencearchitecture.presentation.main.data.JokeDao;
 
 /**
  * Created by j.suarez on 4/14/2015.
@@ -17,12 +17,9 @@ public class MainPresenterImpl implements MainPresenter {
 
     public static final int JOKE_NUMBER = 10;
     public static final String JOKES = "jokes";
-
-    private MainView mainView;
-
-    private JokeDao jokeDao;
-
     protected Subscriber<Jokes> subscriber;
+    private MainView mainView;
+    private JokeDao jokeDao;
     private Jokes jokes;
 
     public MainPresenterImpl(JokeDao jokeDao) {

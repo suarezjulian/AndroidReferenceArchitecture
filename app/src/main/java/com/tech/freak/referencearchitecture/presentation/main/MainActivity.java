@@ -1,4 +1,6 @@
-package com.tech.freak.referencearchitecture.main;
+package com.tech.freak.referencearchitecture.presentation.main;
+
+import javax.inject.Inject;
 
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
@@ -8,16 +10,14 @@ import android.view.View;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
+import butterknife.InjectView;
+
 import com.globant.mvp.BaseActivity;
 import com.tech.freak.referencearchitecture.R;
-import com.tech.freak.referencearchitecture.ReferenceArchitectureApp;
-import com.tech.freak.referencearchitecture.main.adapters.DividerItemDecoration;
-import com.tech.freak.referencearchitecture.main.adapters.JokesAdapter;
-import com.tech.freak.referencearchitecture.model.Jokes;
-
-import javax.inject.Inject;
-
-import butterknife.InjectView;
+import com.tech.freak.referencearchitecture.data.model.Jokes;
+import com.tech.freak.referencearchitecture.presentation.ReferenceArchitectureApp;
+import com.tech.freak.referencearchitecture.presentation.main.adapters.DividerItemDecoration;
+import com.tech.freak.referencearchitecture.presentation.main.adapters.JokesAdapter;
 
 
 public class MainActivity extends BaseActivity<MainPresenter> implements MainView {

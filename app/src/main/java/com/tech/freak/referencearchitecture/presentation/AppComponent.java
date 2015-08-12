@@ -1,8 +1,8 @@
-package com.tech.freak.referencearchitecture;
-
-import com.squareup.okhttp.OkHttpClient;
+package com.tech.freak.referencearchitecture.presentation;
 
 import javax.inject.Singleton;
+
+import com.squareup.okhttp.OkHttpClient;
 
 import dagger.Component;
 

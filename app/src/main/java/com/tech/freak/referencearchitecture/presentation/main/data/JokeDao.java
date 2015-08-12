@@ -1,9 +1,9 @@
-package com.tech.freak.referencearchitecture.main.data;
-
-import com.tech.freak.referencearchitecture.model.Jokes;
-import com.tech.freak.referencearchitecture.network.Api;
+package com.tech.freak.referencearchitecture.presentation.main.data;
 
 import rx.Observable;
+
+import com.tech.freak.referencearchitecture.data.model.Jokes;
+import com.tech.freak.referencearchitecture.domain.network.Api;
 
 /**
  * Created by j.suarez on 4/14/2015.

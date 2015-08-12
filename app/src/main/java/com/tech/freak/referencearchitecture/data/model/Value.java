@@ -1,14 +1,14 @@
-package com.tech.freak.referencearchitecture.model;
+package com.tech.freak.referencearchitecture.data.model;
 
-import com.google.gson.annotations.Expose;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
 
 import org.apache.commons.lang.builder.EqualsBuilder;
 import org.apache.commons.lang.builder.HashCodeBuilder;
 import org.apache.commons.lang.builder.ToStringBuilder;
 
-import java.io.Serializable;
-import java.util.ArrayList;
-import java.util.List;
+import com.google.gson.annotations.Expose;
 
 /**
  * Created by j.suarez on 4/14/2015.
