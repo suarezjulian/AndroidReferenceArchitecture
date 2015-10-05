@@ -8,4 +8,4 @@ This sample uses RxJava and Dagger2.
 
 Unit tests 
 
-Do a sample activity/fragment with another API (Github for instance)
+Do a sample activity/fragment with another API (Github for instance), since the current API is currently having issues
